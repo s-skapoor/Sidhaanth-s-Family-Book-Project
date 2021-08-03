@@ -1,0 +1,37 @@
+<html>
+<head>
+    <title>My family Book</title>
+</head>
+<body>
+
+    <center>
+    <h1 class="text-capitalize">My name is Sidhaanth Kapoor <br>
+         Here is my family Book</h1>
+    <img id="img1" height="300" width="300" src="https://www.notimeforflashcards.com/wp-content/uploads/2012/02/The-Family-Book.jpg">
+    <h5 id="name" class="text-capitalize"></h5>
+    <button height="100" width="100" onclick="next()">Next</button>
+    </center>
+    <script>
+        var images = ["https://th.bing.com/th/id/R.208036384355d2da7aa11fce0a490521?rik=%2fzh98jUZ2VFUIA&riu=http%3a%2f%2fwww.clipartbest.com%2fcliparts%2f9cR%2fL5G%2f9cRL5GrKi.png&ehk=3w9lik5gTxIEDQQxr%2fxNaGDoTsevwOGf7oTCFWhWfRQ%3d&risl=&pid=ImgRaw&r=0", 
+        "https://webstockreview.net/images/dad-clipart-animated.jpg", "https://th.bing.com/th/id/OIP.vNOZoUIkpTX8anvNmPB8lgHaHY?pid=ImgDet&rs=1", "https://www.notimeforflashcards.com/wp-content/uploads/2012/02/The-Family-Book.jpg"];
+        var names=["Shalini Aggarwal", "Mayank Kapoor", "Cooper Kapoor", ""];
+        var i=0;
+        var m=0;
+        function next(){
+            document.getElementById("img1").src = images[i];
+            i++;
+            if (i == 4)
+            {
+                i=0;
+            }
+            document.getElementById("name").innerHTML = names[m];
+            m++;
+            if (m == 4)
+            {
+                m=0;
+            }
+        }
+
+    </script>
+</body>
+</html>
